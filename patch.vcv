@@ -10,7 +10,7 @@
       "data": {
         "audio": {
           "driver": 5,
-          "deviceName": "Apple Inc.: MacBook Pro Speakers",
+          "deviceName": "Apple Inc.: Built-in Output",
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 44100,
@@ -62,7 +62,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.34149909
+          "value": 0.0
         },
         {
           "id": 1,
@@ -102,7 +102,7 @@
     {
       "id": 17,
       "plugin": "VCV-Prototype",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "model": "Prototype",
       "params": [
         {
@@ -243,7 +243,7 @@
         },
         {
           "id": 2,
-          "value": -1.50200129
+          "value": -4.39098644
         },
         {
           "id": 3,
@@ -380,7 +380,7 @@
       "params": [
         {
           "id": 0,
-          "value": -8.96578407
+          "value": 0.840523601
         },
         {
           "id": 1,
