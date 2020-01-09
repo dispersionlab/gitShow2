@@ -24,15 +24,37 @@ At ~49 seconds in, the aftershock started to sound more like a smashing sound. M
 
 >[Pole Position (Wikipedia)](https://en.wikipedia.org/wiki/Pole_Position)
 
-~82 seconds in, and the speed begins increase.  ~10s after that, and the volume increases, making the messy aftershock sound even more messy with surrounding noise.
+~82 seconds in, and the speed begins to increase.  ~10s after that, the volume increases, making the messy aftershock sound even more messy with surrounding noise.
 
 >VCF freq results in higher overtone-like content
 
 
-Initial Patch Parameters *(file: patch.vcv)*<br />
+---
+
+#### Initial Patch Parameters
+*(file: patch.vcv)*<br />
 
 Module | Control | Value | Type |
 ------ | ------- | ----- | ---- |
 LFO-1  |  FREQ   | 0.35306| attenuator knob |
-Random |  RATE   | 0.002 | slider |
+Random (L) |  RATE   | 0.002 | slider |
 VCF    |  FREQ   | 87.206| attenuator knob |
+
+---
+
+#### First Experiment
+*(file: patch.vcv)*<br />
+
+Module | Control | Value | Type |
+------ | ------- | ----- | ---- |
+LFO-1  |  FREQ   | <mark>0.047663</mark> | attenuator knob |
+Random (L) |  RATE   | <mark>1.7907</mark> | slider |
+VCF    |  FREQ   | <mark>8.1758</mark> | attenuator knob |
+
+This edit attempts to slow down LFO frequency, that results into an elongated aftershock sound (approx. ~22s apart).
+
+![VCF Setting](https://i.imgur.com/GuDCuZh.png)
+![Random Rate](https://i.imgur.com/We3OF0H.png)
+![LFO-1 Frequency](https://i.imgur.com/bgmG4QV.png)
+
+---
