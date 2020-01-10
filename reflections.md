@@ -67,3 +67,5 @@ Module | Control | Value | Type |
 LFO-1  |  FREQ   | <mark>0.047663</mark> | attenuator knob |
 Random (L) |  RATE   | <mark>1.7907</mark> | slider |
 VCF    |  FREQ   | <mark>8.1758</mark> | attenuator knob |
+
+---

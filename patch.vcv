@@ -10,7 +10,8 @@
       "data": {
         "audio": {
           "driver": 5,
-          "offset": 1668571504,
+          "deviceName": "Apple Inc.: Built-in Output",
+          "offset": 0,
           "maxChannels": 8,
           "sampleRate": 48000,
           "blockSize": 256
@@ -61,7 +62,7 @@
       "params": [
         {
           "id": 0,
-          "value": 1.0
+          "value": 0.499000013
         },
         {
           "id": 1,
@@ -242,11 +243,11 @@
         },
         {
           "id": 2,
-          "value": 3.63700008
+          "value": -1.49300003
         },
         {
           "id": 3,
-          "value": 0.599999547
+          "value": 0.205000684
         },
         {
           "id": 4,
@@ -254,11 +255,11 @@
         },
         {
           "id": 5,
-          "value": 0.99000001
+          "value": 0.205019534
         },
         {
           "id": 6,
-          "value": 0.0
+          "value": 0.69600004
         }
       ],
       "pos": [
@@ -284,8 +285,8 @@
       "rightModuleId": 8,
       "data": {
         "format": "wav",
-        "path": "/Users/mp/_gitshows/gitShow2/recording2.wav",
-        "incrementPath": true,
+        "path": "/Users/magfoto/Library/Mobile Documents/com~apple~CloudDocs/York U - PhD Study/_courses/DIGM 6020 - Vertical Studio Lab II/gitShow2/recording.wav",
+        "incrementPath": false,
         "sampleRate": 44100,
         "depth": 16,
         "bitRate": 320000
@@ -520,14 +521,6 @@
       "color": "#c91847"
     },
     {
-      "id": 381,
-      "outputModuleId": 25,
-      "outputId": 2,
-      "inputModuleId": 40,
-      "inputId": 0,
-      "color": "#0986ad"
-    },
-    {
       "id": 359,
       "outputModuleId": 32,
       "outputId": 1,
@@ -590,6 +583,38 @@
       "inputModuleId": 25,
       "inputId": 3,
       "color": "#c9b70e"
+    },
+    {
+      "id": 397,
+      "outputModuleId": 27,
+      "outputId": 0,
+      "inputModuleId": 25,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 381,
+      "outputModuleId": 25,
+      "outputId": 2,
+      "inputModuleId": 40,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 404,
+      "outputModuleId": 42,
+      "outputId": 0,
+      "inputModuleId": 27,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 405,
+      "outputModuleId": 27,
+      "outputId": 2,
+      "inputModuleId": 25,
+      "inputId": 2,
+      "color": "#0986ad"
     },
     {
       "id": 354,
