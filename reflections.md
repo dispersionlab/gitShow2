@@ -42,7 +42,7 @@ VCF    |  FREQ   | 87.206| attenuator knob |
 
 ---
 
-#### First Experiment
+#### First Edit Experiment
 *(file: patch.vcv)*<br />
 
 Module | Control | Value | Type |
@@ -58,3 +58,12 @@ This edit attempts to slow down LFO frequency, that results into an elongated af
 ![LFO-1 Frequency](https://i.imgur.com/bgmG4QV.png)
 
 ---
+
+#### Second Edit Experiment
+*(file: patch.vcv)*<br />
+
+Module | Control | Value | Type |
+------ | ------- | ----- | ---- |
+LFO-1  |  FREQ   | <mark>0.047663</mark> | attenuator knob |
+Random (L) |  RATE   | <mark>1.7907</mark> | slider |
+VCF    |  FREQ   | <mark>8.1758</mark> | attenuator knob |

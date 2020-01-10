@@ -10,10 +10,9 @@
       "data": {
         "audio": {
           "driver": 5,
-          "deviceName": "Apple Inc.: Built-in Output",
-          "offset": 0,
+          "offset": 1668571504,
           "maxChannels": 8,
-          "sampleRate": 44100,
+          "sampleRate": 48000,
           "blockSize": 256
         }
       },
@@ -62,23 +61,23 @@
       "params": [
         {
           "id": 0,
-          "value": 0.0
+          "value": 0.805500031
         },
         {
           "id": 1,
-          "value": 0.24499999
+          "value": 0.79700017
         },
         {
           "id": 2,
-          "value": 0.784500122
+          "value": 0.799500465
         },
         {
           "id": 3,
-          "value": 0.0129996706
+          "value": 0.00200000498
         },
         {
           "id": 4,
-          "value": 0.436000019
+          "value": 0.418000072
         }
       ],
       "pos": [
@@ -207,7 +206,7 @@
         },
         {
           "id": 9,
-          "value": 0.81599921
+          "value": 1.0
         },
         {
           "id": 10,
@@ -243,7 +242,7 @@
         },
         {
           "id": 2,
-          "value": -4.39098644
+          "value": 0.963998377
         },
         {
           "id": 3,
@@ -255,7 +254,7 @@
         },
         {
           "id": 5,
-          "value": 0.5
+          "value": 0.99000001
         },
         {
           "id": 6,
@@ -380,7 +379,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.840523601
+          "value": 0.123013228
         },
         {
           "id": 1,
@@ -567,22 +566,6 @@
       "inputModuleId": 40,
       "inputId": 0,
       "color": "#0986ad"
-    },
-    {
-      "id": 386,
-      "outputModuleId": 40,
-      "outputId": 0,
-      "inputModuleId": 32,
-      "inputId": 1,
-      "color": "#0c8e15"
-    },
-    {
-      "id": 387,
-      "outputModuleId": 40,
-      "outputId": 0,
-      "inputModuleId": 32,
-      "inputId": 0,
-      "color": "#c91847"
     },
     {
       "id": 359,
