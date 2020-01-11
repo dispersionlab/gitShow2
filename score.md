@@ -91,3 +91,13 @@ Increase the frequency of the LFO-1 module to shorten the alarm time span.  An i
 Turn on the sequencer module (SEQ-3) for further play.  Change the STEPS knob, to give a "gear changing" effect to the alarm sounds.
 
 ---
+
+#### Third Improvisation
+
+![Third Improvisation](https://i.imgur.com/vhRjtia.png)
+
+Came across an issue attempting to create a recording, that didn't take into account the use of the sequencer in the performance.  A cable was not set to the recording module to incorporate the sequencer sounds.  To fix this, CH 1 (MIXER) -> L/MON (REC) cable was removed, and instead added a MIX (MIXER) -> L/MON (REC) cable.
+
+The purpose of this improvisation was to attempt using the sequencer STEPS knob as the main melody changer int he performance.  Next steps could include controlling the FREQ values of both LFO-1 and VCF from the sequencer.
+
+---

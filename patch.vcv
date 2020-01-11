@@ -30,7 +30,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.720000207
+          "value": 0.711000323
         },
         {
           "id": 1,
@@ -62,7 +62,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.500498116
+          "value": 0.50049901
         },
         {
           "id": 1,
@@ -70,7 +70,7 @@
         },
         {
           "id": 2,
-          "value": 0.799500465
+          "value": 0.796501338
         },
         {
           "id": 3,
@@ -178,7 +178,7 @@
         },
         {
           "id": 2,
-          "value": -4.39099979
+          "value": -4.25599003
         },
         {
           "id": 3,
@@ -197,8 +197,9 @@
           "value": 0.69600004
         }
       ],
+      "leftModuleId": 47,
       "pos": [
-        9,
+        8,
         0
       ]
     },
@@ -298,7 +299,7 @@
         },
         {
           "id": 3,
-          "value": 0.490499943
+          "value": 0.512999833
         }
       ],
       "pos": [
@@ -354,7 +355,7 @@
         },
         {
           "id": 3,
-          "value": 4.0
+          "value": 7.0
         },
         {
           "id": 4,
@@ -362,7 +363,7 @@
         },
         {
           "id": 5,
-          "value": 1.37500083
+          "value": 1.03000116
         },
         {
           "id": 6,
@@ -374,7 +375,7 @@
         },
         {
           "id": 8,
-          "value": 2.62500048
+          "value": 2.89499903
         },
         {
           "id": 9,
@@ -382,7 +383,7 @@
         },
         {
           "id": 10,
-          "value": 3.0150001
+          "value": 3.49500179
         },
         {
           "id": 11,
@@ -509,6 +510,7 @@
       "version": "1.1.6",
       "model": "MIDIToCVInterface",
       "params": [],
+      "rightModuleId": 27,
       "data": {
         "channels": 1,
         "polyMode": 0,
@@ -649,14 +651,6 @@
       "color": "#c9b70e"
     },
     {
-      "id": 527,
-      "outputModuleId": 43,
-      "outputId": 1,
-      "inputModuleId": 2,
-      "inputId": 3,
-      "color": "#0c8e15"
-    },
-    {
       "id": 529,
       "outputModuleId": 4,
       "outputId": 1,
@@ -665,20 +659,28 @@
       "color": "#0986ad"
     },
     {
-      "id": 530,
-      "outputModuleId": 2,
-      "outputId": 1,
-      "inputModuleId": 29,
-      "inputId": 2,
-      "color": "#c91847"
-    },
-    {
       "id": 531,
       "outputModuleId": 2,
       "outputId": 2,
       "inputModuleId": 29,
       "inputId": 3,
       "color": "#0986ad"
+    },
+    {
+      "id": 527,
+      "outputModuleId": 43,
+      "outputId": 1,
+      "inputModuleId": 2,
+      "inputId": 3,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 533,
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 2,
+      "color": "#0c8e15"
     }
   ]
 }
