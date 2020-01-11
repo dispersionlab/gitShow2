@@ -69,3 +69,9 @@ Random (L) |  RATE   | <mark>1.7907</mark> | slider |
 VCF    |  FREQ   | <mark>8.1758</mark> | attenuator knob |
 
 ---
+
+#### Happy Accidental Trip
+
+![Happy Accidental Trip](https://i.imgur.com/huYLC1B.png)
+
+The above screenshot shows an amendment to patch.vcv that seems to generate a slow sweeping rise and fall sound while generating little blips (which I can only imagine is derived from the random generators' STEP output).  Those blips have a slight echo around them, giving them a pleasant, yet glitchy digital sound.  Would these be called timbres?
