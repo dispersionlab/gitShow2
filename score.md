@@ -75,3 +75,19 @@ VCF    |  FREQ   | <mark>8.1758</mark> | attenuator knob |
 ![Happy Accidental Trip](https://i.imgur.com/huYLC1B.png)
 
 The above screenshot shows an amendment to patch.vcv that seems to generate a slow sweeping rise and fall sound while generating little blips (which I can only imagine is derived from the random generators' STEP output).  Those blips have a slight echo around them, giving them a pleasant, yet glitchy digital sound.  Would these be called timbres?
+
+---
+
+#### Ring the Alarm
+
+_Highlighted in blue are the LFO-1 and SEQ-3 modules.  Use the FREQ and STEPS knobs (respectively) to alter the siren._
+
+![Ring the Alarm](https://i.imgur.com/WAVyhMN.png)
+
+Siren sound is the base of this patch.  With MIDI-CV module part of the flow, use keyboard to alter the siren and create your own alarm sounds.
+
+Increase the frequency of the LFO-1 module to shorten the alarm time span.  An identifiable range for this would be keeping the knob between 9 o'clock (0.047663 Hz) and 12 o'clock (2.0125 Hz).
+
+Turn on the sequencer module (SEQ-3) for further play.  Change the STEPS knob, to give a "gear changing" effect to the alarm sounds.
+
+---

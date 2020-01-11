@@ -18,7 +18,7 @@
         }
       },
       "pos": [
-        56,
+        48,
         0
       ]
     },
@@ -30,7 +30,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.765000641
+          "value": 0.720000207
         },
         {
           "id": 1,
@@ -38,7 +38,7 @@
         },
         {
           "id": 2,
-          "value": 0.704279006
+          "value": 0.695793986
         },
         {
           "id": 3,
@@ -50,7 +50,7 @@
         }
       ],
       "pos": [
-        45,
+        37,
         0
       ]
     },
@@ -62,11 +62,11 @@
       "params": [
         {
           "id": 0,
-          "value": 0.806499362
+          "value": 0.500498116
         },
         {
           "id": 1,
-          "value": 0.79700017
+          "value": 0.207999617
         },
         {
           "id": 2,
@@ -74,15 +74,15 @@
         },
         {
           "id": 3,
-          "value": 0.00200000498
+          "value": 0.584000289
         },
         {
           "id": 4,
-          "value": 0.445000052
+          "value": 0.186000273
         }
       ],
       "pos": [
-        20,
+        26,
         1
       ]
     },
@@ -92,75 +92,10 @@
       "version": "1.1.6",
       "model": "Notes",
       "params": [],
-      "leftModuleId": 29,
-      "text": "patch instructions:\n\n1. Choose an audio driver and device in the AUDIO-8 module.\n\n2. Drag knobs up/down. Hold Ctrl (Cmd on Mac) while dragging to fine-tune. Right-click knobs to edit, or double-click to initialize.\n\n3. Drag ports to create and move 3ables. Stack multiple cables on outputs by holding Ctrl (Cmd on Mac) and dragging from an output.\n\n4. Right-click on an empty rack space to add new modules.",
+      "text": "Ring the Alarm\n--------------\n\nSiren sound is the base of this patch.  With MIDI-CV module part of the flow, use keyboard to alter the siren and create your own alarm sounds.\n\nIncrease the frequency of the LFO-1 module to shorten the alarm time span.  An identifiable range for this would be keeping the knob between 9 o'clock (0.047663 Hz) and 12 o'clock (2.0125 Hz).\n\nTurn on the sequencer module (SEQ-3) for further play.  Change the STEPS knob, to give a \"gear changing\" effect to the alarm sounds.\n\n\n",
       "pos": [
-        72,
+        65,
         0
-      ]
-    },
-    {
-      "id": 17,
-      "plugin": "VCV-Prototype",
-      "version": "1.2.0",
-      "model": "Prototype",
-      "params": [
-        {
-          "id": 0,
-          "value": 0.0
-        },
-        {
-          "id": 1,
-          "value": 0.0
-        },
-        {
-          "id": 2,
-          "value": 0.0
-        },
-        {
-          "id": 3,
-          "value": 0.0
-        },
-        {
-          "id": 4,
-          "value": 0.0
-        },
-        {
-          "id": 5,
-          "value": 0.0
-        },
-        {
-          "id": 6,
-          "value": 0.0
-        },
-        {
-          "id": 7,
-          "value": 0.0
-        },
-        {
-          "id": 8,
-          "value": 0.0
-        },
-        {
-          "id": 9,
-          "value": 0.0
-        },
-        {
-          "id": 10,
-          "value": 0.0
-        },
-        {
-          "id": 11,
-          "value": 0.0
-        }
-      ],
-      "data": {
-        "path": "/Users/roryhoy/Documents/gitShow/gitShow2/module2.js",
-        "script": "\nconfig.frameDivider = 1\n// set buffersize of module\nconfig.bufferSize = 16\n\nvar phase = 0\nvar amp = 1\nvar mix;\nvar bias_cv\n// clamp a number to within a range\nlet clampNumber = (num, a, b) => Math.max(Math.min(num, Math.max(a, b)), Math.min(a, b));\n\n// this is where the synthesis calculation occurs\nfunction process(block) {\n    // block.knobs[0] = 0.5\n\t// Knob ranges from -5 to 5 octaves\n\t// var pitch = block.knobs[0] * 10 - 5\n\t// Input follows 1V/oct standard\n    // pitch += block.inputs[0][0]\n    \n    // input 2 on the prototype module corresponds to the 2nd index of the block.inputs array, i.e. block.inputs[1]\n    amp = block.inputs[1][0]\n\n    // compare the amplitude of the two signal inputs\n    compare = [block.inputs[0][0], block.inputs[1][0]]\n    // get the max\n    max = Math.max(...compare)\n    // get the min\n    min = Math.min(...compare)\n\n    // the 1st knob on the prototype module will affect the biasing between input 1 or 2    \n    var bias = block.knobs[0] * 2 - 1\n    \n    // bias_cv += bias * Math.pow(2, block.inputs[2][0]);\n    if(bias < 0.){\n        mix = clampNumber( ((Math.abs(bias) * min) + (bias * max) * max * block.inputs[2][0]), -10., 10.)\n    } else if (bias > 0.){\n        mix = clampNumber( ((bias * max) + ((bias * -1) * min) * min * block.inputs[2][0]), -10., 10.)\n    }\n\n    var freq = 1\n\t//display(\"Freq: \" + freq.toFixed(3) + \" Hz\")\n\n\t// Set all samples in output buffer: this is where each sample is calculated, hence the for...loop. \n\tvar deltaPhase = config.frameDivider * block.sampleTime * freq\n\tfor (var i = 0; i < block.bufferSize; i++) {\n\t\t// Accumulate phase\n\t\tphase += deltaPhase\n\t\t// Wrap phase around range [0, 1]\n        phase %= 1\n        // this is like the console.log output of the prototype module. unfortunately it only displays a single concatenated string. \n        display(\"Logic Module: max, min, mix\" + mix)\n        \n\t\t// Convert phase to sine output\n        // block.outputs[0][i] = Math.sin(2 * Math.PI * phase) * 5 * amp\n        block.outputs[0][i] = max\n        block.outputs[1][i] = min\n        block.outputs[2][i] = mix\n\t}\n}\n"
-      },
-      "pos": [
-        30,
-        1
       ]
     },
     {
@@ -171,15 +106,15 @@
       "params": [
         {
           "id": 0,
-          "value": 2.0
+          "value": 0.0
         },
         {
           "id": 1,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 2,
-          "value": 0.0230000336
+          "value": -0.649000287
         },
         {
           "id": 3,
@@ -215,15 +150,15 @@
         },
         {
           "id": 11,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 12,
-          "value": 0.59400028
+          "value": 0.489000857
         }
       ],
       "pos": [
-        0,
+        5,
         1
       ]
     },
@@ -243,11 +178,11 @@
         },
         {
           "id": 2,
-          "value": -0.143002152
+          "value": -4.39099979
         },
         {
           "id": 3,
-          "value": 0.0
+          "value": 0.48999992
         },
         {
           "id": 4,
@@ -263,7 +198,7 @@
         }
       ],
       "pos": [
-        0,
+        9,
         0
       ]
     },
@@ -282,7 +217,6 @@
           "value": 0.0
         }
       ],
-      "rightModuleId": 8,
       "data": {
         "format": "wav",
         "path": "/Users/magfoto/Library/Mobile Documents/com~apple~CloudDocs/York U - PhD Study/_courses/DIGM 6020 - Vertical Studio Lab II/gitShow2/recording.wav",
@@ -292,7 +226,7 @@
         "bitRate": 320000
       },
       "pos": [
-        67,
+        59,
         0
       ]
     },
@@ -340,7 +274,7 @@
         "external": 0
       },
       "pos": [
-        47,
+        37,
         1
       ]
     },
@@ -352,7 +286,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.517000556
+          "value": 0.784000874
         },
         {
           "id": 1,
@@ -364,11 +298,11 @@
         },
         {
           "id": 3,
-          "value": 0.497999728
+          "value": 0.490499943
         }
       ],
       "pos": [
-        36,
+        27,
         0
       ]
     },
@@ -384,7 +318,7 @@
         },
         {
           "id": 1,
-          "value": 1.0
+          "value": 0.838000119
         },
         {
           "id": 2,
@@ -396,35 +330,7 @@
         }
       ],
       "pos": [
-        24,
-        0
-      ]
-    },
-    {
-      "id": 42,
-      "plugin": "Fundamental",
-      "version": "1.4.0",
-      "model": "Random",
-      "params": [
-        {
-          "id": 0,
-          "value": 1.07972753
-        },
-        {
-          "id": 1,
-          "value": 0.582000136
-        },
-        {
-          "id": 2,
-          "value": 1.0
-        },
-        {
-          "id": 3,
-          "value": 1.0
-        }
-      ],
-      "pos": [
-        30,
+        20,
         0
       ]
     },
@@ -452,15 +358,15 @@
         },
         {
           "id": 4,
-          "value": 0.0599988848
+          "value": 3.11999893
         },
         {
           "id": 5,
-          "value": 0.0
+          "value": 1.37500083
         },
         {
           "id": 6,
-          "value": 0.0
+          "value": 2.1600008
         },
         {
           "id": 7,
@@ -468,19 +374,19 @@
         },
         {
           "id": 8,
-          "value": 0.0
+          "value": 2.62500048
         },
         {
           "id": 9,
-          "value": 0.0
+          "value": 4.33499956
         },
         {
           "id": 10,
-          "value": 0.0
+          "value": 3.0150001
         },
         {
           "id": 11,
-          "value": 0.0
+          "value": 3.52500033
         },
         {
           "id": 12,
@@ -580,7 +486,7 @@
         }
       ],
       "data": {
-        "running": true,
+        "running": false,
         "gates": [
           1,
           1,
@@ -593,22 +499,53 @@
         ]
       },
       "pos": [
-        64,
+        53,
         1
+      ]
+    },
+    {
+      "id": 47,
+      "plugin": "Core",
+      "version": "1.1.6",
+      "model": "MIDIToCVInterface",
+      "params": [],
+      "data": {
+        "channels": 1,
+        "polyMode": 0,
+        "clockDivision": 24,
+        "lastPitch": 8192,
+        "lastMod": 0,
+        "midi": {
+          "driver": -11,
+          "deviceName": "QWERTY keyboard (US)",
+          "channel": -1
+        }
+      },
+      "pos": [
+        0,
+        0
       ]
     }
   ],
   "cables": [
     {
-      "id": 281,
+      "id": 509,
       "outputModuleId": 2,
       "outputId": 0,
       "inputModuleId": 1,
       "inputId": 0,
-      "color": "#0986ad"
+      "color": "#c91847"
     },
     {
-      "id": 282,
+      "id": 484,
+      "outputModuleId": 47,
+      "outputId": 1,
+      "inputModuleId": 4,
+      "inputId": 3,
+      "color": "#c91847"
+    },
+    {
+      "id": 511,
       "outputModuleId": 2,
       "outputId": 0,
       "inputModuleId": 1,
@@ -616,131 +553,115 @@
       "color": "#c9b70e"
     },
     {
-      "id": 342,
-      "outputModuleId": 2,
-      "outputId": 2,
-      "inputModuleId": 29,
-      "inputId": 3,
-      "color": "#c9b70e"
-    },
-    {
-      "id": 341,
-      "outputModuleId": 2,
-      "outputId": 1,
-      "inputModuleId": 29,
-      "inputId": 2,
-      "color": "#0986ad"
-    },
-    {
-      "id": 346,
-      "outputModuleId": 2,
-      "outputId": 1,
-      "inputModuleId": 30,
-      "inputId": 0,
-      "color": "#c91847"
-    },
-    {
-      "id": 347,
-      "outputModuleId": 2,
-      "outputId": 2,
-      "inputModuleId": 30,
-      "inputId": 1,
-      "color": "#0986ad"
-    },
-    {
-      "id": 371,
-      "outputModuleId": 17,
-      "outputId": 1,
-      "inputModuleId": 2,
-      "inputId": 2,
-      "color": "#0986ad"
-    },
-    {
-      "id": 370,
-      "outputModuleId": 17,
-      "outputId": 0,
-      "inputModuleId": 2,
-      "inputId": 1,
-      "color": "#c91847"
-    },
-    {
-      "id": 390,
-      "outputModuleId": 17,
-      "outputId": 2,
-      "inputModuleId": 2,
-      "inputId": 3,
-      "color": "#c9b70e"
-    },
-    {
-      "id": 396,
-      "outputModuleId": 42,
+      "id": 508,
+      "outputModuleId": 27,
       "outputId": 0,
       "inputModuleId": 4,
       "inputId": 0,
-      "color": "#0986ad"
+      "color": "#0c8e15"
     },
     {
-      "id": 416,
-      "outputModuleId": 40,
-      "outputId": 2,
+      "id": 512,
+      "outputModuleId": 47,
+      "outputId": 1,
       "inputModuleId": 25,
-      "inputId": 8,
-      "color": "#c91847"
+      "inputId": 0,
+      "color": "#0c8e15"
     },
     {
-      "id": 417,
-      "outputModuleId": 25,
+      "id": 516,
+      "outputModuleId": 27,
       "outputId": 0,
       "inputModuleId": 40,
       "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 515,
+      "outputModuleId": 40,
+      "outputId": 0,
+      "inputModuleId": 25,
+      "inputId": 3,
       "color": "#0986ad"
     },
     {
-      "id": 358,
-      "outputModuleId": 32,
-      "outputId": 0,
-      "inputModuleId": 17,
-      "inputId": 0,
-      "color": "#c91847"
-    },
-    {
-      "id": 359,
-      "outputModuleId": 32,
-      "outputId": 1,
-      "inputModuleId": 17,
+      "id": 521,
+      "outputModuleId": 27,
+      "outputId": 2,
+      "inputModuleId": 4,
       "inputId": 1,
       "color": "#0986ad"
     },
     {
-      "id": 374,
-      "outputModuleId": 4,
+      "id": 523,
+      "outputModuleId": 2,
       "outputId": 1,
-      "inputModuleId": 32,
-      "inputId": 2,
-      "color": "#c91847"
+      "inputModuleId": 30,
+      "inputId": 0,
+      "color": "#0c8e15"
     },
     {
-      "id": 447,
-      "outputModuleId": 4,
+      "id": 507,
+      "outputModuleId": 47,
       "outputId": 0,
-      "inputModuleId": 32,
-      "inputId": 4,
+      "inputModuleId": 27,
+      "inputId": 0,
       "color": "#c9b70e"
     },
     {
-      "id": 391,
-      "outputModuleId": 40,
+      "id": 510,
+      "outputModuleId": 4,
       "outputId": 0,
-      "inputModuleId": 4,
+      "inputModuleId": 2,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 518,
+      "outputModuleId": 25,
+      "outputId": 9,
+      "inputModuleId": 32,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 513,
+      "outputModuleId": 2,
+      "outputId": 1,
+      "inputModuleId": 32,
+      "inputId": 2,
+      "color": "#0986ad"
+    },
+    {
+      "id": 514,
+      "outputModuleId": 32,
+      "outputId": 0,
+      "inputModuleId": 2,
+      "inputId": 2,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 522,
+      "outputModuleId": 4,
+      "outputId": 1,
+      "inputModuleId": 32,
       "inputId": 3,
       "color": "#c9b70e"
     },
     {
-      "id": 446,
-      "outputModuleId": 27,
-      "outputId": 0,
-      "inputModuleId": 25,
-      "inputId": 0,
+      "id": 527,
+      "outputModuleId": 43,
+      "outputId": 1,
+      "inputModuleId": 2,
+      "inputId": 3,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 529,
+      "outputModuleId": 4,
+      "outputId": 1,
+      "inputModuleId": 43,
+      "inputId": 1,
       "color": "#0986ad"
     }
   ]
