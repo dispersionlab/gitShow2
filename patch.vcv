@@ -663,6 +663,22 @@
       "inputModuleId": 43,
       "inputId": 1,
       "color": "#0986ad"
+    },
+    {
+      "id": 530,
+      "outputModuleId": 2,
+      "outputId": 1,
+      "inputModuleId": 29,
+      "inputId": 2,
+      "color": "#c91847"
+    },
+    {
+      "id": 531,
+      "outputModuleId": 2,
+      "outputId": 2,
+      "inputModuleId": 29,
+      "inputId": 3,
+      "color": "#0986ad"
     }
   ]
 }
