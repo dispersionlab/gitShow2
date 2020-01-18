@@ -7,10 +7,12 @@
       "version": "1.1.6",
       "model": "AudioInterface",
       "params": [],
+      "leftModuleId": 30,
+      "rightModuleId": 29,
       "data": {
         "audio": {
-          "driver": 5,
-          "deviceName": "Apple Inc.: Built-in Output",
+          "driver": 6,
+          "deviceName": "Speakers (Realtek(R) Audio)",
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 48000,
@@ -18,7 +20,7 @@
         }
       },
       "pos": [
-        48,
+        80,
         0
       ]
     },
@@ -30,7 +32,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.711000323
+          "value": 0.759000421
         },
         {
           "id": 1,
@@ -49,8 +51,10 @@
           "value": 0.372089654
         }
       ],
+      "leftModuleId": 27,
+      "rightModuleId": 30,
       "pos": [
-        37,
+        57,
         0
       ]
     },
@@ -62,7 +66,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.50049901
+          "value": 0.664499879
         },
         {
           "id": 1,
@@ -70,7 +74,7 @@
         },
         {
           "id": 2,
-          "value": 0.796501338
+          "value": 0.357001394
         },
         {
           "id": 3,
@@ -78,12 +82,14 @@
         },
         {
           "id": 4,
-          "value": 0.186000273
+          "value": 0.210000128
         }
       ],
+      "leftModuleId": 40,
+      "rightModuleId": 27,
       "pos": [
-        26,
-        1
+        39,
+        0
       ]
     },
     {
@@ -92,9 +98,10 @@
       "version": "1.1.6",
       "model": "Notes",
       "params": [],
+      "leftModuleId": 29,
       "text": "Ring the Alarm\n--------------\n\nSiren sound is the base of this patch.  With MIDI-CV module part of the flow, use keyboard to alter the siren and create your own alarm sounds.\n\nIncrease the frequency of the LFO-1 module to shorten the alarm time span.  An identifiable range for this would be keeping the knob between 9 o'clock (0.047663 Hz) and 12 o'clock (2.0125 Hz).\n\nTurn on the sequencer module (SEQ-3) for further play.  Change the STEPS knob, to give a \"gear changing\" effect to the alarm sounds.\n\n\n",
       "pos": [
-        65,
+        95,
         0
       ]
     },
@@ -138,7 +145,7 @@
         },
         {
           "id": 8,
-          "value": 0.247000083
+          "value": 0.526000023
         },
         {
           "id": 9,
@@ -157,9 +164,10 @@
           "value": 0.489000857
         }
       ],
+      "rightModuleId": 32,
       "pos": [
-        5,
-        1
+        8,
+        0
       ]
     },
     {
@@ -178,15 +186,15 @@
         },
         {
           "id": 2,
-          "value": -4.25599003
+          "value": -1.11499882
         },
         {
           "id": 3,
-          "value": 0.48999992
+          "value": 0.368499875
         },
         {
           "id": 4,
-          "value": 0.597000062
+          "value": 0.0584999993
         },
         {
           "id": 5,
@@ -194,12 +202,13 @@
         },
         {
           "id": 6,
-          "value": 0.69600004
+          "value": 0.616500139
         }
       ],
-      "leftModuleId": 47,
+      "leftModuleId": 4,
+      "rightModuleId": 2,
       "pos": [
-        8,
+        47,
         0
       ]
     },
@@ -218,6 +227,8 @@
           "value": 0.0
         }
       ],
+      "leftModuleId": 1,
+      "rightModuleId": 8,
       "data": {
         "format": "wav",
         "path": "/Users/magfoto/Library/Mobile Documents/com~apple~CloudDocs/York U - PhD Study/_courses/DIGM 6020 - Vertical Studio Lab II/gitShow2/recording.wav",
@@ -227,7 +238,7 @@
         "bitRate": 320000
       },
       "pos": [
-        59,
+        90,
         0
       ]
     },
@@ -270,13 +281,15 @@
           "value": 0.0
         }
       ],
+      "leftModuleId": 2,
+      "rightModuleId": 1,
       "data": {
         "lissajous": 0,
         "external": 0
       },
       "pos": [
-        37,
-        1
+        67,
+        0
       ]
     },
     {
@@ -287,7 +300,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.784000874
+          "value": 0.728500903
         },
         {
           "id": 1,
@@ -295,15 +308,17 @@
         },
         {
           "id": 2,
-          "value": 0.93299973
+          "value": 0.774000108
         },
         {
           "id": 3,
           "value": 0.512999833
         }
       ],
+      "leftModuleId": 25,
+      "rightModuleId": 40,
       "pos": [
-        27,
+        26,
         0
       ]
     },
@@ -315,7 +330,7 @@
       "params": [
         {
           "id": 0,
-          "value": -1.61103487
+          "value": 6.04268789
         },
         {
           "id": 1,
@@ -330,8 +345,10 @@
           "value": 1.0
         }
       ],
+      "leftModuleId": 32,
+      "rightModuleId": 4,
       "pos": [
-        20,
+        34,
         0
       ]
     },
@@ -343,7 +360,7 @@
       "params": [
         {
           "id": 0,
-          "value": 1.97600043
+          "value": 3.77600002
         },
         {
           "id": 1,
@@ -359,7 +376,7 @@
         },
         {
           "id": 4,
-          "value": 3.11999893
+          "value": 2.44499969
         },
         {
           "id": 5,
@@ -500,17 +517,141 @@
         ]
       },
       "pos": [
-        53,
+        66,
         1
       ]
     },
     {
-      "id": 47,
+      "id": 54,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsMixer",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.334499985
+        },
+        {
+          "id": 1,
+          "value": 0.193499967
+        },
+        {
+          "id": 2,
+          "value": 0.121500015
+        },
+        {
+          "id": 3,
+          "value": 0.477000028
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.728000045
+        },
+        {
+          "id": 10,
+          "value": -0.819000065
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "autodafeDrumMixerMutes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "pos": [
+        26,
+        2
+      ]
+    },
+    {
+      "id": 55,
       "plugin": "Core",
       "version": "1.1.6",
       "model": "MIDIToCVInterface",
       "params": [],
-      "rightModuleId": 27,
+      "rightModuleId": 63,
       "data": {
         "channels": 1,
         "polyMode": 0,
@@ -525,7 +666,126 @@
       },
       "pos": [
         0,
-        0
+        1
+      ]
+    },
+    {
+      "id": 63,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.636999726
+        },
+        {
+          "id": 1,
+          "value": 0.472500205
+        },
+        {
+          "id": 2,
+          "value": 0.415499747
+        },
+        {
+          "id": 3,
+          "value": 0.158000261
+        },
+        {
+          "id": 4,
+          "value": 0.282000124
+        }
+      ],
+      "leftModuleId": 55,
+      "rightModuleId": 64,
+      "pos": [
+        8,
+        1
+      ]
+    },
+    {
+      "id": 64,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": -1.73599899
+        },
+        {
+          "id": 3,
+          "value": 0.866499841
+        },
+        {
+          "id": 4,
+          "value": 0.0584999993
+        },
+        {
+          "id": 5,
+          "value": 0.205019534
+        },
+        {
+          "id": 6,
+          "value": 0.0210001711
+        }
+      ],
+      "leftModuleId": 63,
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 68,
+      "plugin": "DrumKit",
+      "version": "1.1.3",
+      "model": "SyntheticBassDrum",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.779999971
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": -1.47000003
+        },
+        {
+          "id": 3,
+          "value": 0.621500015
+        },
+        {
+          "id": 4,
+          "value": 6.5899992
+        },
+        {
+          "id": 5,
+          "value": 1.71500003
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 1.0
+        }
+      ],
+      "pos": [
+        0,
+        2
       ]
     }
   ],
@@ -536,14 +796,6 @@
       "outputId": 0,
       "inputModuleId": 1,
       "inputId": 0,
-      "color": "#c91847"
-    },
-    {
-      "id": 484,
-      "outputModuleId": 47,
-      "outputId": 1,
-      "inputModuleId": 4,
-      "inputId": 3,
       "color": "#c91847"
     },
     {
@@ -563,30 +815,6 @@
       "color": "#0c8e15"
     },
     {
-      "id": 512,
-      "outputModuleId": 47,
-      "outputId": 1,
-      "inputModuleId": 25,
-      "inputId": 0,
-      "color": "#0c8e15"
-    },
-    {
-      "id": 516,
-      "outputModuleId": 27,
-      "outputId": 0,
-      "inputModuleId": 40,
-      "inputId": 0,
-      "color": "#c9b70e"
-    },
-    {
-      "id": 515,
-      "outputModuleId": 40,
-      "outputId": 0,
-      "inputModuleId": 25,
-      "inputId": 3,
-      "color": "#0986ad"
-    },
-    {
       "id": 521,
       "outputModuleId": 27,
       "outputId": 2,
@@ -601,14 +829,6 @@
       "inputModuleId": 30,
       "inputId": 0,
       "color": "#0c8e15"
-    },
-    {
-      "id": 507,
-      "outputModuleId": 47,
-      "outputId": 0,
-      "inputModuleId": 27,
-      "inputId": 0,
-      "color": "#c9b70e"
     },
     {
       "id": 510,
@@ -635,30 +855,6 @@
       "color": "#0986ad"
     },
     {
-      "id": 514,
-      "outputModuleId": 32,
-      "outputId": 0,
-      "inputModuleId": 2,
-      "inputId": 2,
-      "color": "#c9b70e"
-    },
-    {
-      "id": 522,
-      "outputModuleId": 4,
-      "outputId": 1,
-      "inputModuleId": 32,
-      "inputId": 3,
-      "color": "#c9b70e"
-    },
-    {
-      "id": 529,
-      "outputModuleId": 4,
-      "outputId": 1,
-      "inputModuleId": 43,
-      "inputId": 1,
-      "color": "#0986ad"
-    },
-    {
       "id": 531,
       "outputModuleId": 2,
       "outputId": 2,
@@ -681,6 +877,142 @@
       "inputModuleId": 29,
       "inputId": 2,
       "color": "#0c8e15"
+    },
+    {
+      "id": 514,
+      "outputModuleId": 32,
+      "outputId": 0,
+      "inputModuleId": 2,
+      "inputId": 2,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 516,
+      "outputModuleId": 27,
+      "outputId": 0,
+      "inputModuleId": 40,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 670,
+      "outputModuleId": 54,
+      "outputId": 0,
+      "inputModuleId": 43,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 671,
+      "outputModuleId": 54,
+      "outputId": 1,
+      "inputModuleId": 43,
+      "inputId": 3,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 522,
+      "outputModuleId": 4,
+      "outputId": 1,
+      "inputModuleId": 32,
+      "inputId": 3,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 684,
+      "outputModuleId": 4,
+      "outputId": 1,
+      "inputModuleId": 43,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 515,
+      "outputModuleId": 40,
+      "outputId": 0,
+      "inputModuleId": 25,
+      "inputId": 3,
+      "color": "#0986ad"
+    },
+    {
+      "id": 703,
+      "outputModuleId": 68,
+      "outputId": 0,
+      "inputModuleId": 54,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 702,
+      "outputModuleId": 55,
+      "outputId": 0,
+      "inputModuleId": 63,
+      "inputId": 2,
+      "color": "#c91847"
+    },
+    {
+      "id": 713,
+      "outputModuleId": 55,
+      "outputId": 1,
+      "inputModuleId": 63,
+      "inputId": 3,
+      "color": "#c91847"
+    },
+    {
+      "id": 711,
+      "outputModuleId": 63,
+      "outputId": 0,
+      "inputModuleId": 4,
+      "inputId": 3,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 685,
+      "outputModuleId": 63,
+      "outputId": 1,
+      "inputModuleId": 43,
+      "inputId": 2,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 714,
+      "outputModuleId": 63,
+      "outputId": 0,
+      "inputModuleId": 68,
+      "inputId": 3,
+      "color": "#0986ad"
+    },
+    {
+      "id": 724,
+      "outputModuleId": 63,
+      "outputId": 0,
+      "inputModuleId": 63,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 716,
+      "outputModuleId": 55,
+      "outputId": 2,
+      "inputModuleId": 68,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 723,
+      "outputModuleId": 63,
+      "outputId": 1,
+      "inputModuleId": 63,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 715,
+      "outputModuleId": 63,
+      "outputId": 1,
+      "inputModuleId": 68,
+      "inputId": 2,
+      "color": "#c9b70e"
     }
   ]
 }
