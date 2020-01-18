@@ -7,9 +7,10 @@
 > >## Score:
 > 
 > >Build a rhythmic pattern using the highlighted controls - culminating in noise morphing into tone.
-> 
+
 > A low winding sound pulsates in the left. 3 or so pulses of that winding sound begin prior to a slowly alternating low reverberation pulsates on the right.  As they slowly rise in amplitude, period after period, 19 seconds in, appears a sort of chime on the right, blending in with the reverb.  That chime gets louder, but its pitch changes back to a lower reverb, but still with higher amplitude.
-> 
+
+I love how the chime/alarm sort of sound that come in at 16s is complimented by the reverb (air-sucking noise) that come out of the left channel; they result in a syncopation that creates a buildup of anticipation throughout the piece.
 > ><img src="https://i.imgur.com/PRBBGu9.png">
 > 
 > >Lfo-1 freq results in speed changes.<br/>
@@ -21,13 +22,18 @@
 > The aftershocks heard are slightly unpleasant, but yet keeps you on the edge of your seat waiting to hear if they sharpen out their surrounding noise,  A noise, mind you, that sounds like you should be constantly on alert to lower your volume in case in clips out of control and pops your speakers!
 > 
 > At ~49 seconds in, the aftershock started to sound more like a smashing sound. My partner sitting beside me, reading, hears this and shouts: "Atari Pole Position!"
-> 
+
+
 > >[Pole Position (Wikipedia)](https://en.wikipedia.org/wiki/Pole_Position)
-> 
+
+
+I appreciate this reference because I had no idea what *Pole Position* was. I do have to say that I don't really hear the similarity. At 49s, it sounds more like 'boing' noises rather than a smashing sound. I'm not sure how the edits below have changed this.
+
 > ~82 seconds in, and the speed begins to increase.  ~10s after that, the volume increases, making the messy aftershock sound even more messy with surrounding noise.
-> 
+
 > >VCF freq results in higher overtone-like content
-> 
+
+At 82s, it sounds to me that it's slowing down than speeding up. The volume also seems to decrease than increase. 
 > 
 > ---
 > 
