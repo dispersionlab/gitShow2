@@ -1,3 +1,4 @@
+### Initial Reflections
 > >### module2 description
 > >module2.js is logical comparator. It takes signal inputs in Inputs 1 & 2, and outputs the Max, Min, Mix of the two signals out Outputs 1, 2, 3, respectively.
 > 
@@ -109,6 +110,9 @@ At 82s, it sounds to me that it's slowing down than speeding up. The volume also
 > Came across an issue attempting to create a recording, that didn't take into account the use of the sequencer in the performance.  A cable was not set to the recording module to incorporate the sequencer sounds.  To fix this, CH 1 (MIXER) -> L/MON (REC) cable was removed, and instead added a MIX (MIXER) -> L/MON (REC) cable.
 > 
 > The purpose of this improvisation was to attempt using the sequencer STEPS knob as the main melody changer int he performance.  Next steps could include controlling the FREQ values of both LFO-1 and VCF from the sequencer.
-> 
-> ---
-> 
+ 
+---
+
+### Performing the Score
+- I really enjoy being able to press keys to manipulate the sound, as well as seeing the change in the scope.
+- It's hard to hear the difference between different key press because of the sweeping noise.
