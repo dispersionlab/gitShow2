@@ -115,4 +115,6 @@ At 82s, it sounds to me that it's slowing down than speeding up. The volume also
 
 ### Performing the Score
 - I really enjoy being able to press keys to manipulate the sound, as well as seeing the change in the scope.
-- It's hard to hear the difference between different key press because of the sweeping noise.
+- It's hard to hear the difference between different key press because of the sweeping noise. What difference does it make if I press Q instead of C?
+- On the other hand, I also enjoy direct pitch changes from moving the knobs.
+- The score is a pretty simple patch, and so I think my goal is to somehow keep it that way without removing its "Ring the Alarm" feature.
