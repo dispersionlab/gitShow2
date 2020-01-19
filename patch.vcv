@@ -7,8 +7,7 @@
       "version": "1.1.6",
       "model": "AudioInterface",
       "params": [],
-      "leftModuleId": 30,
-      "rightModuleId": 29,
+      "leftModuleId": 29,
       "data": {
         "audio": {
           "driver": 6,
@@ -20,7 +19,7 @@
         }
       },
       "pos": [
-        67,
+        79,
         0
       ]
     },
@@ -66,7 +65,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.222000107
+          "value": 0.619499922
         },
         {
           "id": 1,
@@ -89,19 +88,6 @@
       "rightModuleId": 27,
       "pos": [
         26,
-        0
-      ]
-    },
-    {
-      "id": 8,
-      "plugin": "Core",
-      "version": "1.1.6",
-      "model": "Notes",
-      "params": [],
-      "leftModuleId": 29,
-      "text": "Ring the Alarm\n--------------\n\nSiren sound is the base of this patch.  With MIDI-CV module part of the flow, use keyboard to alter the siren and create your own alarm sounds.\n\nIncrease the frequency of the LFO-1 module to shorten the alarm time span.  An identifiable range for this would be keeping the knob between 9 o'clock (0.047663 Hz) and 12 o'clock (2.0125 Hz).\n\nTurn on the sequencer module (SEQ-3) for further play.  Change the STEPS knob, to give a \"gear changing\" effect to the alarm sounds.\n\n\n",
-      "pos": [
-        82,
         0
       ]
     },
@@ -186,7 +172,7 @@
         },
         {
           "id": 2,
-          "value": 3.01599169
+          "value": -2.49200797
         },
         {
           "id": 3,
@@ -220,15 +206,14 @@
       "params": [
         {
           "id": 0,
-          "value": 1.02999973
+          "value": 0.996999621
         },
         {
           "id": 1,
           "value": 0.0
         }
       ],
-      "leftModuleId": 1,
-      "rightModuleId": 8,
+      "rightModuleId": 1,
       "data": {
         "format": "wav",
         "path": "/Users/magfoto/Library/Mobile Documents/com~apple~CloudDocs/York U - PhD Study/_courses/DIGM 6020 - Vertical Studio Lab II/gitShow2/recording.wav",
@@ -238,7 +223,7 @@
         "bitRate": 320000
       },
       "pos": [
-        77,
+        74,
         0
       ]
     },
@@ -282,7 +267,6 @@
         }
       ],
       "leftModuleId": 2,
-      "rightModuleId": 1,
       "data": {
         "lissajous": 0,
         "external": 0
@@ -592,7 +576,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.375
+          "value": 0.667500019
         },
         {
           "id": 1,
@@ -670,27 +654,27 @@
       "params": [
         {
           "id": 0,
-          "value": 2.0
+          "value": 6.0
         },
         {
           "id": 1,
-          "value": 3.0
+          "value": 6.0
         },
         {
           "id": 2,
-          "value": 7.0
+          "value": 6.0
         },
         {
           "id": 3,
-          "value": 5.0
-        },
-        {
-          "id": 4,
           "value": 2.0
         },
         {
+          "id": 4,
+          "value": 1.0
+        },
+        {
           "id": 5,
-          "value": 7.0
+          "value": 0.0
         },
         {
           "id": 6,
@@ -698,35 +682,35 @@
         },
         {
           "id": 7,
-          "value": 7.0
-        },
-        {
-          "id": 8,
-          "value": 8.0
-        },
-        {
-          "id": 9,
-          "value": 4.0
-        },
-        {
-          "id": 10,
-          "value": 7.0
-        },
-        {
-          "id": 11,
-          "value": 11.0
-        },
-        {
-          "id": 12,
-          "value": 7.0
-        },
-        {
-          "id": 13,
           "value": 0.0
         },
         {
+          "id": 8,
+          "value": 10.0
+        },
+        {
+          "id": 9,
+          "value": 6.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 3.0
+        },
+        {
+          "id": 12,
+          "value": 6.0
+        },
+        {
+          "id": 13,
+          "value": 4.0
+        },
+        {
           "id": 14,
-          "value": 9.0
+          "value": 0.0
         },
         {
           "id": 15,
@@ -1155,6 +1139,14 @@
       "outputModuleId": 75,
       "outputId": 3,
       "inputModuleId": 54,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 850,
+      "outputModuleId": 55,
+      "outputId": 1,
+      "inputModuleId": 78,
       "inputId": 1,
       "color": "#0986ad"
     }
