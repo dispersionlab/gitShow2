@@ -11,7 +11,6 @@
       "data": {
         "audio": {
           "driver": 6,
-          "deviceName": "Speakers (Realtek(R) Audio)",
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 48000,
@@ -31,11 +30,11 @@
       "params": [
         {
           "id": 0,
-          "value": 0.00300000003
+          "value": 0.0
         },
         {
           "id": 1,
-          "value": 0.814588249
+          "value": 0.831558764
         },
         {
           "id": 2,
@@ -65,11 +64,11 @@
       "params": [
         {
           "id": 0,
-          "value": 0.280499399
+          "value": 0.696000338
         },
         {
           "id": 1,
-          "value": 0.0279997289
+          "value": 0.212499738
         },
         {
           "id": 2,
@@ -172,7 +171,7 @@
         },
         {
           "id": 2,
-          "value": -1.22300899
+          "value": -2.87000728
         },
         {
           "id": 3,
@@ -184,7 +183,7 @@
         },
         {
           "id": 5,
-          "value": 0.4122895
+          "value": 0.132989585
         },
         {
           "id": 6,
@@ -576,7 +575,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.581999302
+          "value": 0.499500096
         },
         {
           "id": 1,
@@ -727,6 +726,14 @@
   ],
   "cables": [
     {
+      "id": 509,
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
       "id": 511,
       "outputModuleId": 2,
       "outputId": 0,
@@ -861,6 +868,14 @@
       "inputModuleId": 29,
       "inputId": 3,
       "color": "#0986ad"
+    },
+    {
+      "id": 533,
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 2,
+      "color": "#0c8e15"
     },
     {
       "id": 797,
@@ -1133,22 +1148,6 @@
       "inputModuleId": 78,
       "inputId": 1,
       "color": "#0986ad"
-    },
-    {
-      "id": 509,
-      "outputModuleId": 2,
-      "outputId": 0,
-      "inputModuleId": 1,
-      "inputId": 0,
-      "color": "#c91847"
-    },
-    {
-      "id": 533,
-      "outputModuleId": 2,
-      "outputId": 0,
-      "inputModuleId": 29,
-      "inputId": 2,
-      "color": "#0c8e15"
     }
   ]
 }
