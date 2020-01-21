@@ -11,7 +11,7 @@
       "data": {
         "audio": {
           "driver": 6,
-          "deviceName": "Headphones (AP-11 Stereo)",
+          "deviceName": "Speakers (Realtek(R) Audio)",
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 48000,
@@ -31,11 +31,11 @@
       "params": [
         {
           "id": 0,
-          "value": 0.990000308
+          "value": 0.00300000003
         },
         {
           "id": 1,
-          "value": 0.831558764
+          "value": 0.814588249
         },
         {
           "id": 2,
@@ -65,11 +65,11 @@
       "params": [
         {
           "id": 0,
-          "value": 0.619499922
+          "value": 0.280499399
         },
         {
           "id": 1,
-          "value": 0.212499738
+          "value": 0.0279997289
         },
         {
           "id": 2,
@@ -172,7 +172,7 @@
         },
         {
           "id": 2,
-          "value": -2.49200797
+          "value": -1.22300899
         },
         {
           "id": 3,
@@ -576,7 +576,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.667500019
+          "value": 0.581999302
         },
         {
           "id": 1,
@@ -727,14 +727,6 @@
   ],
   "cables": [
     {
-      "id": 509,
-      "outputModuleId": 2,
-      "outputId": 0,
-      "inputModuleId": 1,
-      "inputId": 0,
-      "color": "#c91847"
-    },
-    {
       "id": 511,
       "outputModuleId": 2,
       "outputId": 0,
@@ -869,14 +861,6 @@
       "inputModuleId": 29,
       "inputId": 3,
       "color": "#0986ad"
-    },
-    {
-      "id": 533,
-      "outputModuleId": 2,
-      "outputId": 0,
-      "inputModuleId": 29,
-      "inputId": 2,
-      "color": "#0c8e15"
     },
     {
       "id": 797,
@@ -1149,6 +1133,22 @@
       "inputModuleId": 78,
       "inputId": 1,
       "color": "#0986ad"
+    },
+    {
+      "id": 509,
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 533,
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 2,
+      "color": "#0c8e15"
     }
   ]
 }
