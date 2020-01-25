@@ -101,3 +101,10 @@
 > The purpose of this improvisation was to attempt using the sequencer STEPS knob as the main melody changer int he performance.  Next steps could include controlling the FREQ values of both LFO-1 and VCF from the sequencer.
 > 
 > ---
+
+## Listening to recording
+
+It starts with a very low sound that goes fora second or so and then a much higher pitch sound starts. It has a lot fo reverb and because it doesn't have many layers of sound, I can concentrate in each sound. I found it very meditative. 
+I put in a loop and it goes almost as a continuum. 
+
+After listening to the recording, I want ot create a very minimalist, slow and mellow sound. 
