@@ -1,4 +1,3 @@
-### Initial Reflections
 > >### module2 description
 > >module2.js is logical comparator. It takes signal inputs in Inputs 1 & 2, and outputs the Max, Min, Mix of the two signals out Outputs 1, 2, 3, respectively.
 > 
@@ -8,13 +7,9 @@
 > >## Score:
 > 
 > >Build a rhythmic pattern using the highlighted controls - culminating in noise morphing into tone.
-
+> 
 > A low winding sound pulsates in the left. 3 or so pulses of that winding sound begin prior to a slowly alternating low reverberation pulsates on the right.  As they slowly rise in amplitude, period after period, 19 seconds in, appears a sort of chime on the right, blending in with the reverb.  That chime gets louder, but its pitch changes back to a lower reverb, but still with higher amplitude.
-
-I love how the chime/alarm sort of sound that come in at 16s is complimented by the reverb (air-sucking noise) that come out of the left channel; they result in a syncopation that creates a buildup of anticipation throughout the piece.
-- Now that I think about it, the beginning reminds me of a bird chirping, and it's almost kind of calming in a weird way.
-- At 16s, it begins to enter a different dimension. Then at 23s, it takes a new form.
-
+> 
 > ><img src="https://i.imgur.com/PRBBGu9.png">
 > 
 > >Lfo-1 freq results in speed changes.<br/>
@@ -24,21 +19,15 @@ I love how the chime/alarm sort of sound that come in at 16s is complimented by 
 > >The left random rate results in “aftershocks” of rhythmic content.<br/>
 > 
 > The aftershocks heard are slightly unpleasant, but yet keeps you on the edge of your seat waiting to hear if they sharpen out their surrounding noise,  A noise, mind you, that sounds like you should be constantly on alert to lower your volume in case in clips out of control and pops your speakers!
-
-At 49s, the bird morphs into a completely different creature, then attempts to find a stable state soon after. Up until 82s, the creature struggles to fully transform.  
+> 
 > At ~49 seconds in, the aftershock started to sound more like a smashing sound. My partner sitting beside me, reading, hears this and shouts: "Atari Pole Position!"
-
-
+> 
 > >[Pole Position (Wikipedia)](https://en.wikipedia.org/wiki/Pole_Position)
-
-
-I appreciate this reference because I had no idea what *Pole Position* was. I do have to say that I don't really hear the similarity. At 49s, it sounds more like 'boing' noises rather than a smashing sound. I'm not sure how the edits below have changed this.
-
+> 
 > ~82 seconds in, and the speed begins to increase.  ~10s after that, the volume increases, making the messy aftershock sound even more messy with surrounding noise.
-
+> 
 > >VCF freq results in higher overtone-like content
-
-At 82s, it sounds to me that it's slowing down than speeding up. The volume also seems to decrease than increase. 
+> 
 > 
 > ---
 > 
@@ -110,11 +99,5 @@ At 82s, it sounds to me that it's slowing down than speeding up. The volume also
 > Came across an issue attempting to create a recording, that didn't take into account the use of the sequencer in the performance.  A cable was not set to the recording module to incorporate the sequencer sounds.  To fix this, CH 1 (MIXER) -> L/MON (REC) cable was removed, and instead added a MIX (MIXER) -> L/MON (REC) cable.
 > 
 > The purpose of this improvisation was to attempt using the sequencer STEPS knob as the main melody changer int he performance.  Next steps could include controlling the FREQ values of both LFO-1 and VCF from the sequencer.
- 
----
-
-### Performing the Score
-- I really enjoy being able to press keys to manipulate the sound, as well as seeing the change in the scope.
-- It's hard to hear the difference between different key press because of the sweeping noise. What difference does it make if I press Q instead of C?
-- On the other hand, I also enjoy direct pitch changes from moving the knobs.
-- The score is a pretty simple patch, and so I think my goal is to somehow keep it that way without removing its "Ring the Alarm" feature.
+> 
+> ---
