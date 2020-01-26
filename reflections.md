@@ -129,7 +129,21 @@ See pic below
 >> ![Block Size 4096](https://i.imgur.com/qieA3Wo.png)
 
 Following the score given, I played with the values of VCF and LFO-1.  
-Always sayting in the low frequencies
+Always staying in the low frequencies
+
+### Playing the score
+
+Make sure to have the extensions folder with the file 16. you don't know me
+
+Let it play for 10 seconds and then type on your keyboard "This is not an instrument", wait for 10 seconds and type again "This is not an instrument". the second yu type it make it slower than the first time. 
+
+Wait for a few seconds and then start moving the knob from the LFO-1 a littl bit to the right and then left, same with the VCF knob, take them both to th emaximum counter clockwise and end the performance. 
+
+![Final Patch](https://i.imgur.com/WvZAvTq.png)
+
+
+
+
 
 
 	 
