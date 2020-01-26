@@ -105,6 +105,26 @@
 ## Listening to recording
 
 It starts with a very low sound that goes fora second or so and then a much higher pitch sound starts. It has a lot fo reverb and because it doesn't have many layers of sound, I can concentrate in each sound. I found it very meditative. 
+It reminds me of the sound of tibetan bowls. 
 I put in a loop and it goes almost as a continuum. 
 
 After listening to the recording, I want ot create a very minimalist, slow and mellow sound. 
+
+## Experimenting with the score
+
+When I open the score, I let it play and there were many different sounds generating on their own. 
+lots of low frequency in combination with high pitch frequencies.  
+
+First, turn FREQ knob from VCF to the left to work only with the low frequencies. 
+
+![First change for low frequencies](https://i.imgur.com/CZxr2tb.png)
+ 
+		
+				
+>>   **Block Size Value**  
+>> Fixed crackling sound by changing the **block size** value in the Audio module from 256(5.3ms) to 4096 (85.3ms)  
+Choose 4096 from the menu and the module display shows 3840. 
+See pic below  
+
+![Block Size 4096](https://i.imgur.com/qieA3Wo.png)
+
