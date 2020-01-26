@@ -15,7 +15,7 @@
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 48000,
-          "blockSize": 3840
+          "blockSize": 2880
         }
       },
       "pos": [
@@ -65,23 +65,23 @@
       "params": [
         {
           "id": 0,
-          "value": 0.235499829
+          "value": 0.202499583
         },
         {
           "id": 1,
-          "value": 0.523002326
+          "value": 0.659502566
         },
         {
           "id": 2,
-          "value": 0.80550158
+          "value": 0.313501567
         },
         {
           "id": 3,
-          "value": 0.0249998178
+          "value": 0.354999781
         },
         {
           "id": 4,
-          "value": 0.194499895
+          "value": 0.70149976
         }
       ],
       "leftModuleId": 79,
@@ -172,15 +172,15 @@
         },
         {
           "id": 2,
-          "value": -4.97600317
+          "value": -2.222013
         },
         {
           "id": 3,
-          "value": 0.174000025
+          "value": 0.378000081
         },
         {
           "id": 4,
-          "value": 0.311999798
+          "value": 0.491999894
         },
         {
           "id": 5,
@@ -216,7 +216,7 @@
       "rightModuleId": 1,
       "data": {
         "format": "wav",
-        "path": "/Users/lorenasalome/Documents/DigMediaYorkU/VSL/week3/recording/recording.wav",
+        "path": "/Users/lorenasalome/Documents/DigMediaYorkU/VSL/gitShow2/recording.wav",
         "incrementPath": false,
         "sampleRate": 44100,
         "depth": 16,
