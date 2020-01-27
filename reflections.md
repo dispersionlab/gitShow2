@@ -142,11 +142,12 @@ Wait for a few seconds and then start moving the knob from the LFO-1 a littl bit
 ![Final Patch](https://i.imgur.com/WvZAvTq.png)
 
 
+New rack
+![Enctrypted message](https://i.imgur.com/sCo6FXz.png)
 
 
 
-
-	 
+ 
 
 
  
