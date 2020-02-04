@@ -101,3 +101,11 @@ Came across an issue attempting to create a recording, that didn't take into acc
 The purpose of this improvisation was to attempt using the sequencer STEPS knob as the main melody changer int he performance.  Next steps could include controlling the FREQ values of both LFO-1 and VCF from the sequencer.
 
 ---
+## Reflection of Last Patch_week03
+
+------
+
+**Analysis of Sound Segmentation**
+
+>>This patch consists of one basic tone principle and one sampled Latin song. Through the alter of speed, tune, delay and a series of functions to add up the distinctive texture to the sonic narrative. The whole song expresses a positive emotion with dancing rhythm.
+---
